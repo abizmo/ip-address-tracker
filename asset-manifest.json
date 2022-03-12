@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/ip-address-tracker/static/js/main.d22175de.js",
+    "index.html": "/ip-address-tracker/index.html",
+    "main.d22175de.js.map": "/ip-address-tracker/static/js/main.d22175de.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d22175de.js"
+  ]
+}
