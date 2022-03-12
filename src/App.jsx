@@ -1,27 +1,20 @@
+import Details from './components/Details';
+import Footer from './components/Footer';
+import Map from './components/Map';
+import SearchBox from './components/SearchBox';
+
 function App() {
   return (
-    <>
+    <div>
       <h1>IP Address Tracker</h1>
-      Search for any IP address or domain
-      IP Address
-      Location
-      Timezone
-      UTC
-      {' '}
-      {/* add offset value dynamically using the API */}
-      ISP
+      <SearchBox />
 
-      <div className="attribution">
-        Challenge by
-        {' '}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>
-        .
-        Coded by
-        {' '}
-        <a href="https://www.abizmo.dev">Abián Izquierdo</a>
-        .
-      </div>
-    </>
+      <Details />
+
+      <Map />
+
+      <Footer />
+    </div>
   );
 }
 
