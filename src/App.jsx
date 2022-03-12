@@ -1,7 +1,7 @@
 function App() {
   return (
     <>
-      IP Address Tracker
+      <h1>IP Address Tracker</h1>
       Search for any IP address or domain
       IP Address
       Location
