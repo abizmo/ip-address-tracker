@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBox test should render and match snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    id="search"
+    onChange={[Function]}
+    placeholder="Search for any IP address or domain"
+    type="text"
+    value=""
+  />
+  <button
+    type="submit"
+  >
+    <img
+      alt="submit"
+      src="/images/icon-arrow.svg"
+    />
+  </button>
+</form>
+`;
