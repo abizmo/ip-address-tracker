@@ -7,6 +7,7 @@ function SearchBox() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
+    // eslint-disable-next-line no-console
     console.log('[Submit]', search);
   };
 
