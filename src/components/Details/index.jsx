@@ -1,4 +1,11 @@
 import { useState } from 'react';
+import styled from 'styled-components';
+
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 75%;
+`;
 
 function Details() {
   const [ip] = useState('192.212.174.101');
@@ -8,7 +15,7 @@ function Details() {
   const [isp] = useState('SpaceX Starlink');
 
   return (
-    <div>
+    <Container>
       <div>
         <h2>IP Address</h2>
         <p>{ip}</p>
@@ -29,7 +36,7 @@ function Details() {
         <h2>ISP</h2>
         <p>{isp}</p>
       </div>
-    </div>
+    </Container>
   );
 }
 
