@@ -21,6 +21,7 @@ module.exports = {
     'jest',
   ],
   rules: {
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
   },
   overrides: [
     {
