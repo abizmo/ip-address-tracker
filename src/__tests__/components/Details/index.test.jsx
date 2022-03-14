@@ -1,5 +1,5 @@
 import { shallow } from 'enzyme';
-import Details from '../../components/Details';
+import Details from '../../../components/Details';
 
 describe('Details test', () => {
   test('should render and match', () => {
