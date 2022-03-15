@@ -1,8 +1,11 @@
+import { Provider } from 'react-redux';
 import styled from 'styled-components';
+
 import Details from './components/Details';
 import Footer from './components/Footer';
 import Map from './components/Map';
 import SearchBox from './components/SearchBox';
+import store from './store';
 
 const Container = styled.div`
   display: grid;
@@ -15,17 +18,19 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Container>
-      <div style={{ backgroundColor: 'hsl(188 61% 56%)' }}>
-        <h1>IP Address Tracker</h1>
-        <SearchBox />
-        <Details />
-      </div>
+    <Provider store={store}>
+      <Container>
+        <div style={{ backgroundColor: 'hsl(188 61% 56%)' }}>
+          <h1>IP Address Tracker</h1>
+          <SearchBox />
+          <Details />
+        </div>
 
-      <Map />
+        <Map />
 
-      <Footer />
-    </Container>
+        <Footer />
+      </Container>
+    </Provider>
   );
 }
 
