@@ -1,21 +1,23 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
+import { getLocation } from '../../actions/tracker';
 import validateDomainName from '../../lib/validateDomainName';
 import validateIPAddress from '../../lib/validateIPAddress';
-import { trackIP, trackDomain } from '../../services/tracker';
 
 const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
 
 function SearchBox() {
   const [search, setSearch] = useState('');
+  const dispatch = useDispatch();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     if (validateIPAddress(search)) {
-      trackIP(search);
+      dispatch(getLocation('ipAddress', search));
       setSearch('');
     } else if (validateDomainName(search)) {
-      trackDomain(search);
+      dispatch(getLocation('domain', search));
       setSearch('');
     } else {
       // eslint-disable-next-line no-console
