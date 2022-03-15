@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+import validateDomainName from '../../lib/validateDomainName';
+import validateIPAddress from '../../lib/validateIPAddress';
+import { trackIP, trackDomain } from '../../services/tracker';
+
 const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
 
 function SearchBox() {
@@ -7,8 +11,16 @@ function SearchBox() {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    // eslint-disable-next-line no-console
-    console.log('[Submit]', search);
+    if (validateIPAddress(search)) {
+      trackIP(search);
+      setSearch('');
+    } else if (validateDomainName(search)) {
+      trackDomain(search);
+      setSearch('');
+    } else {
+      // eslint-disable-next-line no-console
+      console.log('Dont track anything');
+    }
   };
 
   return (
