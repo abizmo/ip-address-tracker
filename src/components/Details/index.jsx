@@ -9,7 +9,7 @@ const Container = styled.div`
 
 function Details() {
   const {
-    ip, location, timezone, offset, isp,
+    ip, location, timezone, isp,
   } = useSelector(({ tracker }) => tracker);
 
   return (
@@ -25,9 +25,9 @@ function Details() {
       <div>
         <h2>Timezone</h2>
         <p>
-          {timezone}
+          UTC
           {' '}
-          {offset}
+          {timezone}
         </p>
       </div>
       <div>

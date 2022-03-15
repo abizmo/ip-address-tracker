@@ -1,8 +1,7 @@
 const initialState = {
   ip: '192.212.174.101',
   location: 'Brooklyn, NY 10001',
-  timezone: 'UTC',
-  offset: '-05:00',
+  timezone: '-05:00',
   isp: 'SpaceX Starlink',
 };
 
