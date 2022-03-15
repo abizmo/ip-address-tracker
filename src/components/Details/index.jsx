@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -8,11 +8,9 @@ const Container = styled.div`
 `;
 
 function Details() {
-  const [ip] = useState('192.212.174.101');
-  const [location] = useState('Brooklyn, NY 10001');
-  const [timezone] = useState('UTC');
-  const [offset] = useState('-05:00');
-  const [isp] = useState('SpaceX Starlink');
+  const {
+    ip, location, timezone, offset, isp,
+  } = useSelector(({ tracker }) => tracker);
 
   return (
     <Container>

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Details test should render and match 1`] = `
-<styled.div>
+<div
+  className="sc-bdvvtL hwbvCN"
+>
   <div>
     <h2>
       IP Address
@@ -36,5 +38,5 @@ exports[`Details test should render and match 1`] = `
       SpaceX Starlink
     </p>
   </div>
-</styled.div>
+</div>
 `;
