@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { getLocationByDomain, getLocationByIp, getMyLocation } from '../../actions/tracker';
@@ -10,6 +10,9 @@ const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
 function SearchBox() {
   const [search, setSearch] = useState('');
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMyLocation());
+  }, []);
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
