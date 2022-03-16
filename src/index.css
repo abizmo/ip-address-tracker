@@ -3,3 +3,15 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --clr-100: hsl(0, 0%, 100%);
+  --ff-400: 'Rubik', sans-serif;
+  --fs-400: 1.125rem;
+  --fs-900: 1.625rem;
+}
+
+body {
+  font-family: var(--ff-400);
+  font-size: var(--fs-400);
+}
