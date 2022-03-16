@@ -6,6 +6,7 @@
 
 :root {
   --clr-100: hsl(0, 0%, 100%);
+  --clr-900: hsl(0, 0%, 0%);
   --ff-400: 'Rubik', sans-serif;
   --fs-400: 1.125rem;
   --fs-900: 1.625rem;

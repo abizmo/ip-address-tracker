@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { getLocationByDomain, getLocationByIp, getMyLocation } from '../../actions/tracker';
 import validateDomainName from '../../lib/validateDomainName';
 import validateIPAddress from '../../lib/validateIPAddress';
+import { Form, Input, Submit } from './styles';
 
 const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
 
@@ -29,16 +30,16 @@ function SearchBox() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <Form onSubmit={handleSubmit}>
+      <Input
         id="search"
         value={search}
         onChange={({ target }) => setSearch(target.value)}
         type="text"
         placeholder="Search for any IP address or domain"
       />
-      <button type="submit"><img src={`${IMAGES_URL}/icon-arrow.svg`} alt="submit" /></button>
-    </form>
+      <Submit><img src={`${IMAGES_URL}/icon-arrow.svg`} alt="submit" /></Submit>
+    </Form>
   );
 }
 
