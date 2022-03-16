@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import createMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import { getLocation } from '../../../actions/tracker';
+import { getLocationByIp } from '../../../actions/tracker';
 import SearchBox from '../../../components/SearchBox';
 
 jest.mock('../../../actions/tracker');
@@ -38,6 +38,6 @@ describe('SearchBox test', () => {
     wrapper.find('input').simulate('change', evt);
     wrapper.find('button').simulate('submit', evt);
     expect(evt.preventDefault).toBeCalled();
-    expect(getLocation).toHaveBeenCalledWith('ipAddress', evt.target.value);
+    expect(getLocationByIp).toHaveBeenCalledWith(evt.target.value);
   });
 });
