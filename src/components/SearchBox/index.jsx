@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { getLocation } from '../../actions/tracker';
+import { getLocationByDomain, getLocationByIp, getMyLocation } from '../../actions/tracker';
 import validateDomainName from '../../lib/validateDomainName';
 import validateIPAddress from '../../lib/validateIPAddress';
 
@@ -14,10 +14,10 @@ function SearchBox() {
   const handleSubmit = (evt) => {
     evt.preventDefault();
     if (validateIPAddress(search)) {
-      dispatch(getLocation('ipAddress', search));
+      dispatch(getLocationByIp(search));
       setSearch('');
     } else if (validateDomainName(search)) {
-      dispatch(getLocation('domain', search));
+      dispatch(getLocationByDomain(search));
       setSearch('');
     } else {
       // eslint-disable-next-line no-console

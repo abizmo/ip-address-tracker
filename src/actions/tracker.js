@@ -7,9 +7,33 @@ const setLocation = (payload) => ({
   payload,
 });
 
-export const getLocation = (query, value) => async (dispatch) => {
+export const getMyLocation = () => async (dispatch) => {
   try {
-    const location = await track(query, value);
+    const location = await track();
+
+    return dispatch(setLocation(location));
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.log(err);
+    return null;
+  }
+};
+
+export const getLocationByDomain = (domain) => async (dispatch) => {
+  try {
+    const location = await track({ domain });
+
+    return dispatch(setLocation(location));
+  } catch (err) {
+    // eslint-disable-next-line no-console
+    console.log(err);
+    return null;
+  }
+};
+
+export const getLocationByIp = (ipAddress) => async (dispatch) => {
+  try {
+    const location = await track({ ipAddress });
 
     return dispatch(setLocation(location));
   } catch (err) {
