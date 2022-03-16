@@ -1,11 +1,27 @@
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
+import { Provider } from 'react-redux';
+import createMockStore from 'redux-mock-store';
+import thunk from 'redux-thunk';
 
+import { getLocationByIp } from '../../../actions/tracker';
 import SearchBox from '../../../components/SearchBox';
 
-describe('SearchBox test', () => {
-  test('should render and match snapshot', () => {
-    const wrapper = shallow(<SearchBox />);
+jest.mock('../../../actions/tracker');
 
+const initialState = {};
+const mockStore = createMockStore([thunk]);
+
+describe('SearchBox test', () => {
+  const store = mockStore(initialState);
+  store.dispatch = jest.fn();
+
+  const wrapper = mount(
+    <Provider store={store}>
+      <SearchBox />
+    </Provider>,
+  );
+
+  test('should render and match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.find('input')).toBeTruthy();
     expect(wrapper.find('button').prop('type')).toBe('submit');
@@ -13,18 +29,15 @@ describe('SearchBox test', () => {
   });
 
   test('should submit when click the button', () => {
-    const wrapper = mount(<SearchBox />);
     const evt = {
       target: { value: '12.12.12.12' },
       preventDefault: () => {},
     };
-    const logSpy = jest.spyOn(console, 'log');
     jest.spyOn(evt, 'preventDefault');
-    logSpy('[Submit]', evt.target.value);
 
     wrapper.find('input').simulate('change', evt);
     wrapper.find('button').simulate('submit', evt);
     expect(evt.preventDefault).toBeCalled();
-    expect(logSpy).toBeCalledWith('[Submit]', evt.target.value);
+    expect(getLocationByIp).toHaveBeenCalledWith(evt.target.value);
   });
 });
