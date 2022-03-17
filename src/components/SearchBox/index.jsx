@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { getLocationByDomain, getLocationByIp, getMyLocation } from '../../actions/tracker';
+import iconArrow from '../../assets/images/icon-arrow.svg';
 import validateDomainName from '../../lib/validateDomainName';
 import validateIPAddress from '../../lib/validateIPAddress';
 import { Form, Input, Submit } from './styles';
 
-const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
+// const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
 
 function SearchBox() {
   const [search, setSearch] = useState('');
@@ -38,7 +39,9 @@ function SearchBox() {
         type="text"
         placeholder="Search for any IP address or domain"
       />
-      <Submit><img src={`${IMAGES_URL}/icon-arrow.svg`} alt="submit" /></Submit>
+      <Submit>
+        <img src={iconArrow} alt="submit" />
+      </Submit>
     </Form>
   );
 }

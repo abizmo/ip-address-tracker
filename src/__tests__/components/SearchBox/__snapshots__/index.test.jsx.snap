@@ -19,7 +19,7 @@ exports[`SearchBox test should render and match snapshot 1`] = `
   >
     <img
       alt="submit"
-      src="/images/icon-arrow.svg"
+      src="icon-arrow.svg"
     />
   </button>
 </form>
