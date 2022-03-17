@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import bgImage from '../../assets/images/pattern-bg.png';
 
 export const Container = styled.div`
   display: grid;
@@ -21,8 +22,7 @@ export const Title = styled.h1`
 `;
 
 export const Header = styled.div`
-  // TODO: Change by background image
-  background-color: hsl(188, 32%, 40%);
+  background: url(${bgImage}) center/cover no-repeat;
   padding: 1.5rem 1.5rem 0;
   position: relative;
 `;
