@@ -1,15 +1,17 @@
+import { FooterContainer, Link } from './styles';
+
 function Footer() {
   return (
-    <div className="attribution">
+    <FooterContainer>
       Challenge by
       {' '}
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a>
+      <Link href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</Link>
       .
       Coded by
       {' '}
-      <a href="https://www.abizmo.dev">Abián Izquierdo</a>
+      <Link href="https://www.abizmo.dev">Abián Izquierdo</Link>
       .
-    </div>
+    </FooterContainer>
   );
 }
 
