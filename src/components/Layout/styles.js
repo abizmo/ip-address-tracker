@@ -24,4 +24,5 @@ export const Header = styled.div`
   // TODO: Change by background image
   background-color: hsl(188, 32%, 40%);
   padding: 1.5rem 1.5rem 0;
+  position: relative;
 `;

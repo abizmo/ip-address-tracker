@@ -2,9 +2,11 @@
 
 exports[`SearchBox test should render and match snapshot 1`] = `
 <form
+  className="sc-bdvvtL fGBlur"
   onSubmit={[Function]}
 >
   <input
+    className="sc-gsDKAQ gAzowQ"
     id="search"
     onChange={[Function]}
     placeholder="Search for any IP address or domain"
@@ -12,6 +14,7 @@ exports[`SearchBox test should render and match snapshot 1`] = `
     value=""
   />
   <button
+    className="sc-dkPtRN jbhGpY"
     type="submit"
   >
     <img

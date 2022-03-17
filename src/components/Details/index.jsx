@@ -1,11 +1,5 @@
 import { useSelector } from 'react-redux';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 75%;
-`;
+import { Card, Detail, Label } from './styles';
 
 function Details() {
   const {
@@ -13,28 +7,28 @@ function Details() {
   } = useSelector(({ tracker }) => tracker);
 
   return (
-    <Container>
+    <Card>
       <div>
-        <h2>IP Address</h2>
-        <p>{ip}</p>
+        <Label>IP Address</Label>
+        <Detail>{ip}</Detail>
       </div>
       <div>
-        <h2>Location</h2>
-        <p>{location}</p>
+        <Label>Location</Label>
+        <Detail>{location}</Detail>
       </div>
       <div>
-        <h2>Timezone</h2>
-        <p>
+        <Label>Timezone</Label>
+        <Detail>
           UTC
           {' '}
           {timezone}
-        </p>
+        </Detail>
       </div>
       <div>
-        <h2>ISP</h2>
-        <p>{isp}</p>
+        <Label>ISP</Label>
+        <Detail>{isp}</Detail>
       </div>
-    </Container>
+    </Card>
   );
 }
 
