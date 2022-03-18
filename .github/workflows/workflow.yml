@@ -15,6 +15,9 @@ jobs:
 
       - name: Install and build
         run: npm install && npm run build
+        env:
+          REACT_APP_GEO_IPIFY_API_KEY: ${{ secrets.REACT_APP_GEO_IPIFY_API_KEY }}
+          REACT_APP_MAP_TOKEN: ${{ secrets.REACT_APP_MAP_TOKEN }}
  
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
