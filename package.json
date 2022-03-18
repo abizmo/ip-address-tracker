@@ -1,6 +1,6 @@
 {
   "name": "ip-address-tracker",
-  "homepage": "http://abizmo.github.io/ip-address-tracker",
+  "homepage": "https://abizmo.github.io/ip-address-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

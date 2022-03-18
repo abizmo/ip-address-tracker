@@ -9,7 +9,7 @@
   --clr-400: hsl(0, 0%, 59%);
   --clr-700: hsl(0, 0%, 17%);
   --clr-900: hsl(0, 0%, 0%);
-  --ff-400: 'Rubik', sans-serif;
+  --ff-sans: 'Rubik', sans-serif;
   --fs-100: .625rem;
   --fs-400: 1.125rem;
   --fs-500: 1.25rem;
@@ -17,6 +17,6 @@
 }
 
 body {
-  font-family: var(--ff-400);
+  font-family: var(--ff-sans);
   font-size: var(--fs-400);
 }
