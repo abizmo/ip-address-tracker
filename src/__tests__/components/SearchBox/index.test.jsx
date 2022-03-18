@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 import createMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import { getLocationByIp } from '../../../actions/tracker';
-import SearchBox from '../../../components/SearchBox';
+import { getLocationByIp } from 'actions/tracker';
+import SearchBox from 'components/SearchBox';
 
-jest.mock('../../../actions/tracker');
+jest.mock('actions/tracker');
 
 const initialState = {};
 const mockStore = createMockStore([thunk]);

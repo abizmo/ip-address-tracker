@@ -5,7 +5,7 @@ import {
 } from 'react-leaflet';
 import { useSelector } from 'react-redux';
 
-import iconLocation from '../../assets/images/icon-location.svg';
+import iconLocation from 'assets/images/icon-location.svg';
 
 const IconLocation = icon({ iconUrl: iconLocation });
 

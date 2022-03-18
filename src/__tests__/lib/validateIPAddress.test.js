@@ -1,4 +1,4 @@
-import validateIPAddress from '../../lib/validateIPAddress';
+import validateIPAddress from 'lib/validateIPAddress';
 
 describe('ValidateIPAddress tests', () => {
   test('should return true if valid IP', () => {

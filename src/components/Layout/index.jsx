@@ -1,7 +1,8 @@
-import Details from '../Details';
-import Footer from '../Footer';
-import Map from '../Map';
-import SearchBox from '../SearchBox';
+import Details from 'components/Details';
+import Footer from 'components/Footer';
+import Map from 'components/Map';
+import SearchBox from 'components/SearchBox';
+
 import { Container, Header, Title } from './styles';
 
 function Layout() {

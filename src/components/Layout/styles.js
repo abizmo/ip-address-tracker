@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import bgImage from '../../assets/images/pattern-bg.png';
+
+import bgImage from 'assets/images/pattern-bg.png';
 
 export const Container = styled.div`
   display: grid;

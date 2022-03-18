@@ -9,6 +9,13 @@ module.exports = {
     'airbnb',
     'plugin:react/jsx-runtime',
   ],
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
+    },
+  },
   parserOptions: {
     ecmaFeatures: {
       jsx: true,

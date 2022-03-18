@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import createMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import Details from '../../../components/Details';
+import Details from 'components/Details';
 
 const initialState = {
   tracker: {

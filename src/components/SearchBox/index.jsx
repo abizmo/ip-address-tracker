@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { getLocationByDomain, getLocationByIp, getMyLocation } from '../../actions/tracker';
-import iconArrow from '../../assets/images/icon-arrow.svg';
-import validateDomainName from '../../lib/validateDomainName';
-import validateIPAddress from '../../lib/validateIPAddress';
+import { getLocationByDomain, getLocationByIp, getMyLocation } from 'actions/tracker';
+import iconArrow from 'assets/images/icon-arrow.svg';
+import validateDomainName from 'lib/validateDomainName';
+import validateIPAddress from 'lib/validateIPAddress';
 import { Form, Input, Submit } from './styles';
 
 // const IMAGES_URL = `${process.env.PUBLIC_URL}/images`;
