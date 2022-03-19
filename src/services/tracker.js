@@ -2,8 +2,6 @@ import axios from 'axios';
 
 const API_KEY = process.env.REACT_APP_GEO_IPIFY_API_KEY;
 const BASE_URL = 'https://geo.ipify.org/api/v2';
-// eslint-disable-next-line no-console
-console.log(API_KEY);
 
 async function track({ domain, ipAddress } = {}) {
   try {
