@@ -1,4 +1,4 @@
-import validateDomainName from '../../lib/validateDomainName';
+import validateDomainName from 'lib/validateDomainName';
 
 describe('validateDomainName tests', () => {
   test('should return true if valid Domain Name', () => {

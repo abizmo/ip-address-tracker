@@ -1,4 +1,4 @@
-import { SET_LOCATION } from '../actions/tracker';
+import { SET_LOCATION } from 'actions/tracker';
 
 const initialState = {
   ip: '',

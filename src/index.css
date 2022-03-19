@@ -3,3 +3,20 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --clr-100: hsl(0, 0%, 100%);
+  --clr-400: hsl(0, 0%, 59%);
+  --clr-700: hsl(0, 0%, 17%);
+  --clr-900: hsl(0, 0%, 0%);
+  --ff-sans: 'Rubik', sans-serif;
+  --fs-100: .625rem;
+  --fs-400: 1.125rem;
+  --fs-500: 1.25rem;
+  --fs-900: 1.625rem;
+}
+
+body {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+}

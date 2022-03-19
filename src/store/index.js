@@ -3,7 +3,7 @@ import {
 } from 'redux';
 import thunk from 'redux-thunk';
 
-import trackerReducer from '../reducers/trackerReducer';
+import trackerReducer from 'reducers/trackerReducer';
 
 const reducers = combineReducers({
   tracker: trackerReducer,

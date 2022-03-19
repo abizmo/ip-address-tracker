@@ -1,4 +1,4 @@
-import track from '../services/tracker';
+import track from 'services/tracker';
 
 export const SET_LOCATION = 'SET_LOCATION';
 
