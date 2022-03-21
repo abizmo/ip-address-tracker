@@ -2,54 +2,62 @@
 
 exports[`Details test should render and match 1`] = `
 <div
-  className="sc-bdvvtL czIanb"
+  className="sc-bdvvtL hgzNoB"
 >
-  <div>
+  <div
+    className="sc-gsDKAQ efJMhT"
+  >
     <h2
-      className="sc-gsDKAQ iLdXKx"
+      className="sc-dkPtRN cIkiZQ"
     >
       IP Address
     </h2>
     <p
-      className="sc-dkPtRN kswTnZ"
+      className="sc-hKwDye bXAloP"
     >
       192.212.174.101
     </p>
   </div>
-  <div>
+  <div
+    className="sc-gsDKAQ efJMhT"
+  >
     <h2
-      className="sc-gsDKAQ iLdXKx"
+      className="sc-dkPtRN cIkiZQ"
     >
       Location
     </h2>
     <p
-      className="sc-dkPtRN kswTnZ"
+      className="sc-hKwDye bXAloP"
     >
       Brooklyn, NY 10001
     </p>
   </div>
-  <div>
+  <div
+    className="sc-gsDKAQ efJMhT"
+  >
     <h2
-      className="sc-gsDKAQ iLdXKx"
+      className="sc-dkPtRN cIkiZQ"
     >
       Timezone
     </h2>
     <p
-      className="sc-dkPtRN kswTnZ"
+      className="sc-hKwDye bXAloP"
     >
       UTC
        
       -05:00
     </p>
   </div>
-  <div>
+  <div
+    className="sc-gsDKAQ efJMhT"
+  >
     <h2
-      className="sc-gsDKAQ iLdXKx"
+      className="sc-dkPtRN cIkiZQ"
     >
       ISP
     </h2>
     <p
-      className="sc-dkPtRN kswTnZ"
+      className="sc-hKwDye bXAloP"
     >
       SpaceX Starlink
     </p>
