@@ -1,5 +1,7 @@
 import { useSelector } from 'react-redux';
-import { Card, Detail, Label } from './styles';
+import {
+  Card, Detail, DetailContainer, Label,
+} from './styles';
 
 function Details() {
   const {
@@ -8,26 +10,26 @@ function Details() {
 
   return (
     <Card>
-      <div>
+      <DetailContainer>
         <Label>IP Address</Label>
         <Detail>{ip}</Detail>
-      </div>
-      <div>
+      </DetailContainer>
+      <DetailContainer>
         <Label>Location</Label>
         <Detail>{location}</Detail>
-      </div>
-      <div>
+      </DetailContainer>
+      <DetailContainer>
         <Label>Timezone</Label>
         <Detail>
           UTC
           {' '}
           {timezone}
         </Detail>
-      </div>
-      <div>
+      </DetailContainer>
+      <DetailContainer>
         <Label>ISP</Label>
         <Detail>{isp}</Detail>
-      </div>
+      </DetailContainer>
     </Card>
   );
 }

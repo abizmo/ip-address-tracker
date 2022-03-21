@@ -14,9 +14,18 @@
   --fs-400: 1.125rem;
   --fs-500: 1.25rem;
   --fs-900: 1.625rem;
+
 }
 
 body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --fs-100: .75rem;
+    --fs-500: 1.625rem;
+    --fs-900: 2rem;
+  }
 }

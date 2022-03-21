@@ -26,4 +26,8 @@ export const Header = styled.div`
   background: url(${bgImage}) center/cover no-repeat;
   padding: 1.5rem 1.5rem 0;
   position: relative;
+
+  @media (min-width: 80rem) {
+    padding-top: 2rem;
+  }
 `;
