@@ -2,15 +2,10 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
-  margin-bottom: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   max-width: 34.5rem;
   width: 100%;
-
-  @media (min-width: 80rem) {
-    margin-bottom: 3rem;
-  }
 `;
 
 export const Input = styled.input`

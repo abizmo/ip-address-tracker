@@ -2,7 +2,7 @@
 
 exports[`SearchBox test should render and match snapshot 1`] = `
 <form
-  className="sc-bdvvtL bOQYlQ"
+  className="sc-bdvvtL fOTIHl"
   onSubmit={[Function]}
 >
   <input

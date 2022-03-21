@@ -5,10 +5,14 @@ import bgImage from 'assets/images/pattern-bg.png';
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr min-content;
+  grid-template-rows: 1.1fr 2fr min-content;
   gap: 0px 0px;
   height: 100vh;
   width: 100vw;
+
+  @media (min-width: 80rem) {
+    grid-template-rows: 1fr 3fr min-content;
+  }
 `;
 
 export const Title = styled.h1`

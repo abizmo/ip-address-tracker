@@ -4,6 +4,7 @@ export const Card = styled.div`
   align-items: center;
   background-color: var(--clr-100);
   border-radius: 1rem;
+  bottom: 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@ export const Card = styled.div`
   max-width: 69.5rem;
   padding: 1.5rem;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translate(-50%, 50%);
   width: calc(100% - 48px);
 
   @media (min-width: 80rem) {
