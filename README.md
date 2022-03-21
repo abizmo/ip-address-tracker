@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/abizmo/ip-address-tracker](https://github.com/abizmo/ip-address-tracker)
+- Live Site URL: [https://abizmo.github.io/ip-address-tracker](https://abizmo.github.io/ip-address-tracker)
 
 ## My process
 
