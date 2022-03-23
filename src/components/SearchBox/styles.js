@@ -18,6 +18,11 @@ export const Input = styled.input`
   letter-spacing: 0.015em;
   padding-left: 1.5rem;
   padding-right: 1rem;
+
+  &:hover, &:focus, &:focus-visible {
+    cursor: pointer;
+    outline: none;
+  }
 `;
 
 export const Submit = styled.button
@@ -27,4 +32,9 @@ export const Submit = styled.button
     border-radius: 0 1rem 1rem 0;
     height: 58px;
     width: 58px;
+  
+    &:hover, &:focus {
+      background-color: var(--clr-700);
+      cursor: pointer;
+    }
   `;
