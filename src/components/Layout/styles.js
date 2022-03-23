@@ -33,5 +33,6 @@ export const Header = styled.div`
 
   @media (min-width: 80rem) {
     padding-top: 2rem;
+    min-height: 18rem;
   }
 `;
